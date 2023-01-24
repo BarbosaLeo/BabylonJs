@@ -53,12 +53,14 @@
             // Dim the light a small amount - 0 to 1
             light.intensity = 0.7;
 
-            // Built-in 'sphere' shape.
-            const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", 
-                {diameter: 2, segments: 32}, scene);
+            // // Built-in 'sphere' shape.
+            // const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", 
+            //     {diameter: 2, segments: 32}, scene);
 
-            // Move the sphere upward 1/2 its height
-            sphere.position.y = 1;
+            // // Move the sphere upward 1/2 its height
+            // sphere.position.y = 1;
+
+            BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/BarbosaLeo/BabylonJs/main/Models/", "jet.glb", scene)
 
             // Built-in 'ground' shape.
             const ground = BABYLON.MeshBuilder.CreateGround("ground", 
